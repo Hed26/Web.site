@@ -1,0 +1,146 @@
+* {
+    padding: 0; 
+    margin: 0;
+    font-family: cursive;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Color y fondo */
+body {
+    background-color: #red; /* Color de fondo gris claro */
+    color: #blue; /* Color del texto */
+}
+
+/* Secciones con colores de fondo */
+section {
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior/inferior */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Sección de Bienvenida */
+.welcome {
+    background-color: #blue; /* Color de fondo */
+}
+
+/* Sección de Servicios */
+.services {
+    background-color: # verde; /* Color de fondo */
+}
+
+/* Sección de Contacto */
+.contact {
+    background-color: #aliceblue; /* Color de fondo */
+}
+
+/* Estilizando texto y fuentes */
+h1 {
+    font-size: 2.5em; /* Tamaño de la fuente */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-weight: bold; /* Grosor de la fuente */
+    text-align: center; /* Alineación centrada */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-decoration: underline; /* Subrayado */
+    line-height: 1.5; /* Altura de línea */
+}
+
+p {
+    line-height: 1.6; /* Altura de línea */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Espaciado y márgenes */
+.container {
+    margin: 20px auto; /* Márgenes automáticos para centrar y 20px arriba/abajo */
+    padding: 15px; /* Relleno interno de 15px */
+    max-width: 800px; /* Ancho máximo de 800px */
+}
+
+/* Bordes y sombras */
+.box {
+    border: 2px solid #333; /* Borde de 2px sólido */
+    border-radius: 10px; /* Esquinas redondeadas de 10px */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px;
+}
+
+/* Posicionamiento */
+.fixed-element {
+    position: fixed; /* Posición fija en la pantalla */
+    top: 10px; /* A 10px del borde superior */
+    right: 10px; /* A 10px del borde derecho */
+    z-index: 1000; /* Se superpone a otros elementos */
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alineación centrada verticalmente */
+    flex-direction: row; /* Elementos en fila horizontal */
+}
+
+/* Transiciones */
+.button {
+    background-color: #blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición de color */
+}
+
+.button:hover {
+    background-color: #beige; /* Cambia el color cuando se pasa el mouse */
+}
+
+/* Animaciones */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated-box {
+    animation: slide-in 0.5s ease-in-out; /* Aplica la animación */
+}
+
+/* Tamaño y disposición de imágenes */
+img {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 600px; /* Ancho máximo de 600px */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+body {
+    background-color: #blue; /* Color de fondo */
+}
+
+section {
+    padding: 60px 0;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+section:nth-child(odd) {
+    background-color: #beige; /* Color de fondo para secciones impares */
+}
+
+section:nth-child(even) {
+    background-color: #bisque; /* Color de fondo para secciones pares */
+}
+
+section:hover {
+    transform: scale(1.02); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+h1 {
+    color: #red; /* Color de encabezado */
+}
