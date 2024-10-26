@@ -1,0 +1,20 @@
+body {
+    background-color: #f0f8ff; /* Color de fondo */
+}
+
+h1 {
+    font-size: 2em; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #ffffff; /* Fondo blanco para secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.about {
+    background-color: #e7f0fe; /* Color de fondo para "Nosotros" */
+}
