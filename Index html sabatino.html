@@ -90,14 +90,207 @@
         </section>
 
         <section id="servicios" class="services">
+            
+           section id="servicios" class="services">
+
             <h1>Servicios</h1>
             <p>Ofrecemos una variedad de servicios educativos, incluyendo nuestra biblioteca en línea.</p>
+  <ul>
+    <li>
+      Biblioteca en Línea
+      <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+</head>
+<body>
+    <h2>Registro de Estudiantes</h2>
+    <form id="registroForm">
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <div id="mensaje"></div>
+
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            const codigo = document.getElementById('codigo').value;
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+
+            // Aquí puedes guardar la información en una base de datos o en el almacenamiento local
+            // Por simplicidad, solo mostraremos un mensaje
+            document.getElementById('mensaje').innerText = `Registrado: ${nombre} (Código: ${codigo})`;
+        });
+    </script>
+</body>
+</html>
+
+      <ul>
+        <li><a href="#Estudiantes">Estudiantes</a></li>
+        <li><a href="#Prestamos">Préstamos</a></li>
+        <li><a href="#Autores">Autores</a></li>
+        <li><a href="#Libros">Libros</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca en Línea</title>
+</head>
+<body>
+    <nav>
+        <ul>
+           
+    <section id="Estudiantes">
+        <h2>Estudiantes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Juan Pérez</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>María López</td>
+                    <td>987654321</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Prestamos">
+        <h2>Préstamos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Código Libro</th>
+                    <th>Estudiante</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>101</td>
+                    <td>Juan Pérez</td>
+                    <td>2024-10-01</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>102</td>
+                    <td>María López</td>
+                    <td>2024-10-05</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Libros">
+        <h2>Libros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código Libro</th>
+                    <th>Título</th>
+                    <th>Género</th>
+                    <th>Autor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>El Alquimista</td>
+                    <td>Ficción</td>
+                    <td>Paulo Coelho</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Cien Años de Soledad</td>
+                    <td>Ficción</td>
+                    <td>Gabriel García Márquez</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Autores">
+        <h2>Autores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código Libro</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Paulo</td>
+                    <td>Coelho</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Gabriel</td>
+                    <td>García Márquez</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
+
+</nav>
+
+
         </section>
 
         <section id="contacto" class="contact">
             <h1>Contacto</h1>
             <p>Ponte en contacto con nosotros para más información.</p>
         </section>
+        <h4>Email:</h4>
+            <p><a href="mailto:info@colegio.com">info@colegio.com</a></p>
+            <h4>Síguenos en redes sociales:</h4>
+            <a href="https://facebook.com" class="btn btn-primary" target="_blank">Facebook</a>
+            <a href="https://twitter.com" class="btn btn-info" target="_blank">Twitter</a>
+            <a href="https://instagram.com" class="btn btn-danger" target="_blank">Instagram</a>
+        </section>
+        
+    </div>
+
+    <!-- Enlazando Bootstrap JS y dependencias (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
 
         
     <!-- Enlazando Bootstrap JS y dependencias (jQuery y Popper.js) -->
