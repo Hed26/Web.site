@@ -9,8 +9,8 @@
 
 /* Color y fondo */
 body {
-    background-color: #red; /* Color de fondo gris claro */
-    color: #blue; /* Color del texto */
+    background-color: red; /* Color de fondo gris claro */
+    color: blue; /* Color del texto */
 }
 
 /* Secciones con colores de fondo */
@@ -22,17 +22,17 @@ section {
 
 /* Sección de Bienvenida */
 .welcome {
-    background-color: #blue; /* Color de fondo */
+    background-color: blue; /* Color de fondo */
 }
 
 /* Sección de Servicios */
 .services {
-    background-color: # verde; /* Color de fondo */
+    background-color: green; /* Color de fondo */
 }
 
 /* Sección de Contacto */
 .contact {
-    background-color: #aliceblue; /* Color de fondo */
+    background-color: aliceblue; /* Color de fondo */
 }
 
 /* Estilizando texto y fuentes */
@@ -84,7 +84,7 @@ p {
 
 /* Transiciones */
 .button {
-    background-color: #blue;
+    background-color: blue;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -94,7 +94,7 @@ p {
 }
 
 .button:hover {
-    background-color: #beige; /* Cambia el color cuando se pasa el mouse */
+    background-color: beige; /* Cambia el color cuando se pasa el mouse */
 }
 
 /* Animaciones */
@@ -120,7 +120,7 @@ img {
     height: auto; /* Altura automática para mantener la proporción */
 }
 body {
-    background-color: #blue; /* Color de fondo */
+    background-color: blue; /* Color de fondo */
 }
 
 section {
@@ -129,11 +129,11 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: #beige; /* Color de fondo para secciones impares */
+    background-color: beige; /* Color de fondo para secciones impares */
 }
 
 section:nth-child(even) {
-    background-color: #bisque; /* Color de fondo para secciones pares */
+    background-color: bisque; /* Color de fondo para secciones pares */
 }
 
 section:hover {
@@ -142,5 +142,5 @@ section:hover {
 }
 
 h1 {
-    color: #red; /* Color de encabezado */
+    color: red; /* Color de encabezado */
 }
